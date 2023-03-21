@@ -1,0 +1,3 @@
+link del wireframe : https://app.moqups.com/v9RSkpMLN6iEY8msFjkRikDRu7jBUNwy/view/page/ad49f3d90
+nota: el wireframe cuenta con las paginas: nosotros, contacto y el index (tanto en escritorio como en mobile)
+ultimo avance:colocar los hover bien en el catalogo.

@@ -1,0 +1,340 @@
+
+/*hero*/
+:root{
+    background-image: url(../images/hero.jpg);
+}
+.header__hero{
+    background-color: rgba(7, 6, 6, 0.904);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+    border-radius: 30px;
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    padding: 7px;
+}
+
+.header__paginas{
+    color: white;
+    font-size: 23px;
+    text-decoration: none;
+    padding: 50px;
+    
+}
+.hero{
+    padding: 3px;
+    margin: 40px;
+    color: rgb(255, 253, 253);
+    text-align: center;
+    background-color: rgba(8, 8, 8, 0.842);
+    width: 500px;
+    height: 110px;
+    border-radius: 30px;
+}
+
+.hero__main{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero__parrafo{
+    font-size: 20px;
+}
+
+.audio__hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0);
+    height: 100px;
+    width: 100%;
+}
+
+/*contacto*/
+.titulos__contacto{
+    border:double;
+    color: white;
+    border-radius: 30px;
+    background-color: rgb(7, 6, 6, 0.904);
+    text-align: center;
+}
+
+form{
+    border:double;
+    display: flex;
+    color: wheat;
+    background-color: rgb(7, 6, 6, 0.904);
+    width: 100%;
+    height: 250px;
+    border-radius: 30px;
+}
+
+.input{
+    padding: 15px;
+    background-color: rgba(0, 255, 255, 0);
+    height:50px ;
+}
+
+input{
+    height: 35px;
+    border-radius: 10px;
+}
+
+.form1{
+    text-align: center;
+    width: 50%;
+}
+
+.form2{
+    display: flex;
+    width: 50%;
+}
+
+textarea{
+    width: 400px;
+    border-radius: 10px;
+    height:220px;
+}
+
+.button{
+    text-align: center;
+    text-align: center;
+    width:50%;
+    padding-top:210px;
+}
+
+/*nosotros*/
+
+
+.avatar__nosotros{
+    height:130px;
+    border-radius: 100px;
+    padding-left: 5px;
+}
+
+.titulo__nosotros{
+    border: double;
+    color:white;
+    background-color: rgba(7, 6, 6, 0.904);
+    display: flex;
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+}
+
+.titulo__nosotros2{
+    padding-right: 500px;
+}
+
+.div__nosotros{
+    transition-duration: 1s;
+    border-radius: 30px;
+    border:double;
+    color: white;
+    height: 160px;
+    background-color: rgba(7, 6, 6, 0.904);
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div__nosotros:hover{
+    height: 180px;
+}
+
+.personaje{
+    height: 100px;
+    width: 100px;
+    border-radius: 1000px;
+    padding: 7px; 
+    padding-right: 7px;
+}
+
+.p__personaje{
+    font-size: 20px;
+}
+
+/*aplicando grids al main de nosotros*/
+
+#main__nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0,5fr;
+    grid-template-rows: 1fr 1fr 0,5fr;
+    grid-template-areas: 
+    "section__nosotros section__nosotros  aside__nosotros"
+    "section__nosotros section__nosotros  aside__nosotros"
+    "section__nosotros section__nosotros  aside__nosotros"
+    ;
+}
+
+#section__nosotros{
+    grid-area: "section__nosotros";
+}
+
+#aside__nosotros{
+    grid-area: "aside__nosotros";
+    text-align: center;
+    width: 200px;
+    color: white;
+    background-color: rgba(7, 6, 6, 0.904);
+    border-radius: 30px;
+    border:double;
+}
+
+.a__aside{
+    color:rgb(196, 67, 142);
+    text-decoration: none;
+}
+
+/*footer*/
+
+footer{
+    background-color: rgba(7, 6, 6, 0.904);
+    height: 95px;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.ul__footer{
+    padding-left: 0px;
+    width: 100%;
+    color: white;
+    height: 95px;
+    background-color: rgba(7, 6, 6, 0.904);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+    border:double;
+}
+
+.li__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo__footer1{
+    padding-left: 8px;
+    border-radius: 100%;
+    height: 20px;
+    width:20px
+}
+.logo__footer2{
+    padding-left: 8px;
+    border-radius: 100px;
+    height:28px ;
+    width: 28px;
+}
+
+.logo__footer3{
+    padding-left: 8px;
+    border-radius: 100px;
+    height:25px ;
+    width: 25px;
+}
+
+/*nav de las paginas*/
+.header__paginas{
+    transition-duration: 1s;
+}
+
+.header__paginas:hover{
+    height: 130px;
+    width: 200px;
+    color: black;
+    background-color: rgb(240, 248, 255);
+    font-size: 30px;
+    border:double;
+}
+
+/*catalogo*/
+
+.titulo__catalogo{
+    padding-top: 60px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 120px;
+    background-color: rgba(7, 6, 6, 0.904);
+    border: double;
+    border-radius: 30px;
+}
+
+.section__catalogo{
+    background-color: rgba(253, 249, 249, 0.904);
+    color: white;
+    width: 99%;
+    height: 845px;
+    border:double;
+    margin: 10px;
+    
+}
+
+.section__remera1{
+    display:flex;
+    justify-content: space-between;
+    height: 343px;
+}
+
+.remera{
+    justify-content: center;
+    border:double;
+    width: 500px;
+    text-align: center;
+    margin:5px;
+    background-color: rgba(7, 6, 6, 0.904);
+}
+
+.imagen__catalogo{
+    height:220px;
+    width:210px;
+    padding: 10px;
+    border-style:inherit;
+    border-color: white;
+    margin: 5px;
+}
+
+
+.subtitulo__section {
+    width:99%;
+    text-align: center;
+    grid-area: "subtitulo";
+    height: 100px;
+    padding-top: 45px;
+    border:double;
+    background-color: rgba(7, 6, 6, 0.904);
+    margin:5px;
+}
+
+.section__gorras{
+    background-color: rgba(253, 249, 249, 0.904);
+    color: white;
+    width: 99%;
+    height: 515px;
+    border:double;
+    margin: 10px;
+}
+
+/*ofertas*/
+
+.titulo__ofertas {
+    border: double;
+    color:white;
+    background-color: rgba(7, 6, 6, 0.904);
+    text-align: center;
+    border-radius: 30px;
+    height: 120px;
+    padding-top: 50px;
+
+}
