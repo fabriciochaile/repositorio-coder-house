@@ -1,6 +1,6 @@
 
 /*hero*/
-:root{
+body{
     background-image: url(../images/hero.jpg);
 }
 .header__hero{
