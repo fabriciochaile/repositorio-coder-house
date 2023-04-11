@@ -2,7 +2,7 @@
 /*hero*/
 body{
     background-image: url(../images/hero.jpg);
-}
+
 .header__hero{
     background-color: rgba(7, 6, 6, 0.904);
     display: flex;
@@ -11,42 +11,45 @@ body{
     width: 100%;
     height: 130px;
     border-radius: 30px;
+    .logo{
+        height: 80px;
+        width: 80px;
+        border-radius: 50px;
+        padding: 7px;
+    }
+    .header__paginas{
+        color: rgb(255, 255, 255);
+        font-size: 23px;
+        text-decoration: none;
+        padding: 50px;
+        border-radius: 30px;
 }
 
-.logo{
-    height: 80px;
-    width: 80px;
-    border-radius: 50px;
-    padding: 7px;
-}
-
-.header__paginas{
-    color: white;
-    font-size: 23px;
-    text-decoration: none;
-    padding: 50px;
     
 }
-.hero{
-    padding: 3px;
-    margin: 40px;
-    color: rgb(255, 253, 253);
-    text-align: center;
-    background-color: rgba(8, 8, 8, 0.842);
-    width: 500px;
-    height: 110px;
-    border-radius: 30px;
-}
+
 
 .hero__main{
     height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    .hero{
+        padding: 3px;
+        margin: 40px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        background-color: rgba(8, 8, 8, 0.842);
+        width: 500px;
+        height: 150px;
+        border-radius: 30px;
+    }
+    .hero__parrafo{
+        font-size: 20px;
+        
+    }
 }
-.hero__parrafo{
-    font-size: 20px;
-}
+
 
 .audio__hero{
     display: flex;
@@ -55,6 +58,7 @@ body{
     background-color: rgba(0, 255, 255, 0);
     height: 100px;
     width: 100%;
+}
 }
 
 /*contacto*/
@@ -74,50 +78,48 @@ form{
     width: 100%;
     height: 250px;
     border-radius: 30px;
+    .input{
+        padding: 15px;
+        background-color: rgba(0, 255, 255, 0);
+        height:50px ;
+    }
+    
+    input{
+        height: 35px;
+        border-radius: 10px;
+    }
+    
+    .form1{
+        text-align: center;
+        width: 50%;
+    }
+    
+    .form2{
+        display: flex;
+        width: 50%;
+        textarea{
+            width: 400px;
+            border-radius: 10px;
+            height:220px;
+        }
+        
+        .button{
+            text-align: center;
+            text-align: center;
+            width:50%;
+            padding-top:210px;
+        }
+    }
+    
+    
 }
 
-.input{
-    padding: 15px;
-    background-color: rgba(0, 255, 255, 0);
-    height:50px ;
-}
 
-input{
-    height: 35px;
-    border-radius: 10px;
-}
-
-.form1{
-    text-align: center;
-    width: 50%;
-}
-
-.form2{
-    display: flex;
-    width: 50%;
-}
-
-textarea{
-    width: 400px;
-    border-radius: 10px;
-    height:220px;
-}
-
-.button{
-    text-align: center;
-    text-align: center;
-    width:50%;
-    padding-top:210px;
-}
 
 /*nosotros*/
 
 
-.avatar__nosotros{
-    height:130px;
-    border-radius: 100px;
-    padding-left: 5px;
-}
+
 
 .titulo__nosotros{
     border: double;
@@ -128,11 +130,16 @@ textarea{
     justify-content: space-between;
     align-items: center;
     height: 180px;
+    .titulo__nosotros2{
+        padding-right: 500px;
+    }
+    .avatar__nosotros{
+        height:130px;
+        border-radius: 100px;
+        padding-left: 5px;
+    }
 }
 
-.titulo__nosotros2{
-    padding-right: 500px;
-}
 
 .div__nosotros{
     transition-duration: 1s;
@@ -145,23 +152,25 @@ textarea{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    
+    .personaje{
+        height: 100px;
+        width: 100px;
+        border-radius: 1000px;
+        padding: 7px; 
+        padding-right: 7px;
+    }
+    
+    .p__personaje{
+        font-size: 20px;
+    }
 }
-
 .div__nosotros:hover{
     height: 180px;
 }
 
-.personaje{
-    height: 100px;
-    width: 100px;
-    border-radius: 1000px;
-    padding: 7px; 
-    padding-right: 7px;
-}
 
-.p__personaje{
-    font-size: 20px;
-}
 
 /*aplicando grids al main de nosotros*/
 
@@ -174,26 +183,29 @@ textarea{
     "section__nosotros section__nosotros  aside__nosotros"
     "section__nosotros section__nosotros  aside__nosotros"
     ;
+    #section__nosotros{
+        grid-area: "section__nosotros";
+    }
+    
+    #aside__nosotros{
+        grid-area: "aside__nosotros";
+        text-align: center;
+        width: 200px;
+        color: white;
+        background-color: rgba(7, 6, 6, 0.904);
+        border-radius: 30px;
+        border:double;
+        padding: 5px;
+        .a__aside{
+            color:rgb(196, 67, 142);
+            text-decoration: none;
+        }
+    }
 }
 
-#section__nosotros{
-    grid-area: "section__nosotros";
-}
 
-#aside__nosotros{
-    grid-area: "aside__nosotros";
-    text-align: center;
-    width: 200px;
-    color: white;
-    background-color: rgba(7, 6, 6, 0.904);
-    border-radius: 30px;
-    border:double;
-}
 
-.a__aside{
-    color:rgb(196, 67, 142);
-    text-decoration: none;
-}
+
 
 /*footer*/
 
@@ -202,66 +214,65 @@ footer{
     height: 95px;
     border-radius: 30px;
     width: 100%;
+    .ul__footer{
+        padding-left: 0px;
+        width: 100%;
+        color: white;
+        height: 95px;
+        background-color: rgba(7, 6, 6, 0.904);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 30px;
+        border:double;
+        .li__footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .logo__footer1{
+            padding-left: 8px;
+            border-radius: 100%;
+            height: 20px;
+            width:20px
+        }
+        .logo__footer2{
+            padding-left: 8px;
+            border-radius: 100px;
+            height:28px ;
+            width: 28px;
+        }
+        
+        .logo__footer3{
+            padding-left: 8px;
+            border-radius: 100px;
+            height:25px ;
+            width: 25px;
+        }
+    }
 }
 
-.ul__footer{
-    padding-left: 0px;
-    width: 100%;
-    color: white;
-    height: 95px;
-    background-color: rgba(7, 6, 6, 0.904);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 30px;
-    border:double;
-}
-
-.li__footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.logo__footer1{
-    padding-left: 8px;
-    border-radius: 100%;
-    height: 20px;
-    width:20px
-}
-.logo__footer2{
-    padding-left: 8px;
-    border-radius: 100px;
-    height:28px ;
-    width: 28px;
-}
-
-.logo__footer3{
-    padding-left: 8px;
-    border-radius: 100px;
-    height:25px ;
-    width: 25px;
-}
 
 /*nav de las paginas*/
-.header__paginas{
-    transition-duration: 1s;
-}
 
 .header__paginas:hover{
     height: 130px;
     width: 200px;
-    color: black;
     background-color: rgb(240, 248, 255);
     font-size: 30px;
     border:double;
+    color: black;
 }
+.header__paginas{
+    transition-duration: 1s;
+}
+
 
 /*catalogo*/
 
 .titulo__catalogo{
-    padding-top: 60px;
+    padding-top: 30px;
     color: white;
     text-align: center;
     width: 100%;
@@ -311,7 +322,7 @@ footer{
     text-align: center;
     grid-area: "subtitulo";
     height: 100px;
-    padding-top: 45px;
+    padding-top: 30px;
     border:double;
     background-color: rgba(7, 6, 6, 0.904);
     margin:5px;
@@ -326,7 +337,7 @@ footer{
     margin: 10px;
 }
 
-/*ofertas*/
+/*politica de la empresa*/
 
 .titulo__ofertas {
     border: double;
@@ -335,6 +346,15 @@ footer{
     text-align: center;
     border-radius: 30px;
     height: 120px;
-    padding-top: 50px;
+    padding-top: 30px;
 
+}
+
+.politica_empresa {
+    border: double;
+    color:white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    font-size:20px;
+    
 }

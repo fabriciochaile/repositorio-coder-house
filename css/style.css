@@ -2,8 +2,7 @@
 body {
   background-image: url(../images/hero.jpg);
 }
-
-.header__hero {
+body .header__hero {
   background-color: rgba(7, 6, 6, 0.904);
   display: flex;
   justify-content: space-between;
@@ -12,44 +11,39 @@ body {
   height: 130px;
   border-radius: 30px;
 }
-
-.logo {
+body .header__hero .logo {
   height: 80px;
   width: 80px;
   border-radius: 50px;
   padding: 7px;
 }
-
-.header__paginas {
-  color: white;
+body .header__hero .header__paginas {
+  color: rgb(255, 255, 255);
   font-size: 23px;
   text-decoration: none;
   padding: 50px;
-}
-
-.hero {
-  padding: 3px;
-  margin: 40px;
-  color: rgb(255, 253, 253);
-  text-align: center;
-  background-color: rgba(8, 8, 8, 0.842);
-  width: 500px;
-  height: 110px;
   border-radius: 30px;
 }
-
-.hero__main {
+body .hero__main {
   height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.hero__parrafo {
+body .hero__main .hero {
+  padding: 3px;
+  margin: 40px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: rgba(8, 8, 8, 0.842);
+  width: 500px;
+  height: 150px;
+  border-radius: 30px;
+}
+body .hero__main .hero__parrafo {
   font-size: 20px;
 }
-
-.audio__hero {
+body .audio__hero {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,35 +70,29 @@ form {
   height: 250px;
   border-radius: 30px;
 }
-
-.input {
+form .input {
   padding: 15px;
   background-color: rgba(0, 255, 255, 0);
   height: 50px;
 }
-
-input {
+form input {
   height: 35px;
   border-radius: 10px;
 }
-
-.form1 {
+form .form1 {
   text-align: center;
   width: 50%;
 }
-
-.form2 {
+form .form2 {
   display: flex;
   width: 50%;
 }
-
-textarea {
+form .form2 textarea {
   width: 400px;
   border-radius: 10px;
   height: 220px;
 }
-
-.button {
+form .form2 .button {
   text-align: center;
   text-align: center;
   width: 50%;
@@ -112,12 +100,6 @@ textarea {
 }
 
 /*nosotros*/
-.avatar__nosotros {
-  height: 130px;
-  border-radius: 100px;
-  padding-left: 5px;
-}
-
 .titulo__nosotros {
   border: double;
   color: white;
@@ -128,9 +110,13 @@ textarea {
   align-items: center;
   height: 180px;
 }
-
-.titulo__nosotros2 {
+.titulo__nosotros .titulo__nosotros2 {
   padding-right: 500px;
+}
+.titulo__nosotros .avatar__nosotros {
+  height: 130px;
+  border-radius: 100px;
+  padding-left: 5px;
 }
 
 .div__nosotros {
@@ -145,21 +131,19 @@ textarea {
   justify-content: space-between;
   align-items: center;
 }
-
-.div__nosotros:hover {
-  height: 180px;
-}
-
-.personaje {
+.div__nosotros .personaje {
   height: 100px;
   width: 100px;
   border-radius: 1000px;
   padding: 7px;
   padding-right: 7px;
 }
-
-.p__personaje {
+.div__nosotros .p__personaje {
   font-size: 20px;
+}
+
+.div__nosotros:hover {
+  height: 180px;
 }
 
 /*aplicando grids al main de nosotros*/
@@ -169,12 +153,10 @@ textarea {
   grid-template-rows: 1fr 1fr 0, 5fr;
   grid-template-areas: "section__nosotros section__nosotros  aside__nosotros" "section__nosotros section__nosotros  aside__nosotros" "section__nosotros section__nosotros  aside__nosotros";
 }
-
-#section__nosotros {
+#main__nosotros #section__nosotros {
   grid-area: "section__nosotros";
 }
-
-#aside__nosotros {
+#main__nosotros #aside__nosotros {
   grid-area: "aside__nosotros";
   text-align: center;
   width: 200px;
@@ -182,9 +164,9 @@ textarea {
   background-color: rgba(7, 6, 6, 0.904);
   border-radius: 30px;
   border: double;
+  padding: 5px;
 }
-
-.a__aside {
+#main__nosotros #aside__nosotros .a__aside {
   color: rgb(196, 67, 142);
   text-decoration: none;
 }
@@ -196,8 +178,7 @@ footer {
   border-radius: 30px;
   width: 100%;
 }
-
-.ul__footer {
+footer .ul__footer {
   padding-left: 0px;
   width: 100%;
   color: white;
@@ -209,28 +190,24 @@ footer {
   border-radius: 30px;
   border: double;
 }
-
-.li__footer {
+footer .ul__footer .li__footer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.logo__footer1 {
+footer .ul__footer .logo__footer1 {
   padding-left: 8px;
   border-radius: 100%;
   height: 20px;
   width: 20px;
 }
-
-.logo__footer2 {
+footer .ul__footer .logo__footer2 {
   padding-left: 8px;
   border-radius: 100px;
   height: 28px;
   width: 28px;
 }
-
-.logo__footer3 {
+footer .ul__footer .logo__footer3 {
   padding-left: 8px;
   border-radius: 100px;
   height: 25px;
@@ -238,22 +215,22 @@ footer {
 }
 
 /*nav de las paginas*/
+.header__paginas:hover {
+  height: 130px;
+  width: 200px;
+  background-color: rgb(240, 248, 255);
+  font-size: 30px;
+  border: double;
+  color: black;
+}
+
 .header__paginas {
   transition-duration: 1s;
 }
 
-.header__paginas:hover {
-  height: 130px;
-  width: 200px;
-  color: black;
-  background-color: rgb(240, 248, 255);
-  font-size: 30px;
-  border: double;
-}
-
 /*catalogo*/
 .titulo__catalogo {
-  padding-top: 60px;
+  padding-top: 30px;
   color: white;
   text-align: center;
   width: 100%;
@@ -301,7 +278,7 @@ footer {
   text-align: center;
   grid-area: "subtitulo";
   height: 100px;
-  padding-top: 45px;
+  padding-top: 30px;
   border: double;
   background-color: rgba(7, 6, 6, 0.904);
   margin: 5px;
@@ -316,7 +293,7 @@ footer {
   margin: 10px;
 }
 
-/*ofertas*/
+/*politica de la empresa*/
 .titulo__ofertas {
   border: double;
   color: white;
@@ -324,7 +301,15 @@ footer {
   text-align: center;
   border-radius: 30px;
   height: 120px;
-  padding-top: 50px;
+  padding-top: 30px;
+}
+
+.politica_empresa {
+  border: double;
+  color: white;
+  background-color: rgba(7, 6, 6, 0.904);
+  border-radius: 30px;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
